@@ -23,3 +23,41 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/GarethMSheldon/aether-network-scan
 cd aether-scan
+```
+
+# 3. Configure Your Scan
+Edit the `.env` file to set your **target** and **speed**:
+
+* **SCAN_TARGET**=scanme.nmap.org
+* **SCAN_PORTS**=20-1000
+* **SCAN_TIMEOUT**=0.8
+* **MAX_THREADS**=100
+
+# 🛡️ Ethical Hacking Warning
+
+* AETHER-SCAN is intended for educational purposes and authorized security testing only.
+* Scanning networks you do not have explicit permission to test is illegal and unethical.
+* Use this tool responsibly.
+
+---
+
+# 📄 License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+---
+
+# 📂 Suggested File Additions
+
+### 1. .gitignore
+
+```text
+logs/*.json
+__pycache__/
+.env
+.DS_Store
+
+```
+
+
+
