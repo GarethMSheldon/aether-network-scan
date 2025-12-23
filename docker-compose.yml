@@ -1,0 +1,11 @@
+services:
+  aether-scan:
+    image: aether-scan:latest
+    build: .
+    env_file:
+      - .env
+    volumes:
+      # This saves your scan results to your local computer's /logs folder
+      - ./logs:/app/logs
+    # Network mode host allows scanning the local machine/network easily
+    network_mode: "host"
